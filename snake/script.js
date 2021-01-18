@@ -1,7 +1,7 @@
 let canvas = document.getElementById("snake");
 let context = canvas.getContext("2d");
 let box = 32;
-let snake[];
+let snake = [];
 
 snake[0] = {
     x:8 * box,
@@ -84,6 +84,5 @@ function iniciarJogo(){
     }
 
     snake.unshift(newHead);
-}
 
 let jogo = setInterval(iniciarJogo, 100); // a cada 100 milisegundo dá continuidade
